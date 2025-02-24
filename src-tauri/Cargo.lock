@@ -887,7 +887,6 @@ dependencies = [
 name = "dockerapp"
 version = "0.1.0"
 dependencies = [
- "anyhow",
  "bollard",
  "futures-util",
  "serde",
@@ -897,7 +896,6 @@ dependencies = [
  "tauri-plugin-opener",
  "tauri-plugin-store",
  "thiserror 2.0.11",
- "tokio",
 ]
 
 [[package]]
@@ -4261,9 +4259,7 @@ dependencies = [
  "bytes",
  "libc",
  "mio",
- "parking_lot",
  "pin-project-lite",
- "signal-hook-registry",
  "socket2",
  "tokio-macros",
  "windows-sys 0.52.0",
