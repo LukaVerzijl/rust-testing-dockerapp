@@ -43,8 +43,8 @@ async fn list_containers(state: State<'_, AppState>) -> Result<Vec<Container>, C
         ports: item
             .ports
             .map(|ports| ports.into_iter().filter_map(|port| port.ip).collect()),
-    }))
-    .collect()
+    }).collect())
+
 }
 
 #[tauri::command]
@@ -65,8 +65,7 @@ async fn list_images(state: State<'_, AppState>) -> Result<Vec<Image>, CommandEr
     Ok(images.into_iter().map(|image| Image {
         repo_tag: image.repo_tags.first().unwrap_or(&String::new()).to_owned(),
         size: image.size,
-    }))
-    .collect()
+    }).collect())
 }
 
 #[tauri::command]
