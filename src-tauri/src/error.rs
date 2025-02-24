@@ -7,5 +7,4 @@ pub enum CommandError {
 
     #[error("Unexpected Error: {0}")]
     UnexpectedError(String),
-
 }

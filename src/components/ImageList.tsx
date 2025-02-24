@@ -45,7 +45,7 @@ const ImageList : React.FC = () => {
 
     return(
         <div>
-            <h2>Images</h2>
+            <h2 className={"font-bold"}>Images</h2>
             <div className={'flex flex-col gap-5'}>{images.map((image) => (
                 <div key={image.id}>
                     <div>
