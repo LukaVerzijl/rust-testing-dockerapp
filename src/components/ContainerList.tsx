@@ -65,7 +65,7 @@ const ContainerList : React.FC = () => {
             <h2 className={'font-bold'}>Containers</h2>
             <div className={'flex flex-col gap-3 text-white'}>
                 {containers.map((container) => (
-                    <div key={container.id} className={'flex justify-between items-center p-3 border rounded bg-gray-100'}>
+                    <div key={container.id} className={'flex justify-between items-center text-black p-3 border rounded bg-gray-100'}>
                         <div>
                             <h3>{container.name}</h3>
                             <p>Status: {container.status}</p>

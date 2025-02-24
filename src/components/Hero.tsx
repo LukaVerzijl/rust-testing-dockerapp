@@ -164,7 +164,6 @@ export default function HeroGeometric({
         Check your up and running docker containers. And manage them easily
     </p>
     </motion.div>
-
     <motion.div custom={3} variants={fadeUpVariants} initial="hidden" animate="visible">
     <button
         onClick={onComplete}
